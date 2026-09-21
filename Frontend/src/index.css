@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  background-color: blanchedalmond;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TEKS BERJALAN */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: white;
+  padding: 10px;
+  margin: 15px auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.marquee p {
+  display: inline-block;
+  margin: 0;
+  padding-left: 100%;
+  font-weight: bold;
+  animation: berjalan 12s linear infinite;
+}
+
+@keyframes berjalan {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* HOME */
+.home-container {
+  padding: 10px;
+}
+
+.home-card {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.home-card h1 {
+  margin-bottom: 10px;
+}
+
+/* FORM */
+.form-card {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* TABLE */
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+}
+
+.table th {
+  text-align: center;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* TENTANG */
+.tentang-card {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.tentang-card {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.tentang-card h1,
+.tentang-card h3,
+.tentang-card p,
+.tentang-card li {
+  text-align: justify;
+}
